@@ -1,6 +1,8 @@
 
 package com.tawkit;
 
+import com.tawkit.view.main.MainWindow;
+
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 
@@ -14,9 +16,8 @@ public class Main {
                         UIManager.getSystemLookAndFeelClassName()
                 );
 
-                System.out.println("Tawkit application started!");
-
-                // Main application window will be initialized here.
+                MainWindow mainWindow = new MainWindow();
+                mainWindow.setVisible(true);
 
             } catch (Exception e) {
                 e.printStackTrace();
